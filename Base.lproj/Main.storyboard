@@ -38,6 +38,9 @@
                                         </imageView>
                                     </subviews>
                                 </view>
+                                <connections>
+                                    <outlet property="imageView" destination="VsQ-IF-TCK" id="bRU-23-vf5"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -65,9 +68,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NhK-XE-DXT">
-                                <rect key="frame" x="0.0" y="64" width="375" height="271"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NhK-XE-DXT">
+                                <rect key="frame" x="8" y="75" width="359" height="260"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-lx-SCi">
                                 <rect key="frame" x="275" y="343" width="78" height="30"/>
@@ -87,8 +89,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sSe-mh-X1r" firstAttribute="bottom" secondItem="Z6S-In-qLK" secondAttribute="bottom" constant="294" id="4Ix-FU-Koz"/>
+                            <constraint firstItem="Z6S-In-qLK" firstAttribute="top" secondItem="NhK-XE-DXT" secondAttribute="bottom" constant="8" symbolic="YES" id="77U-XT-duj"/>
+                            <constraint firstItem="NhK-XE-DXT" firstAttribute="leading" secondItem="sSe-mh-X1r" secondAttribute="leading" constant="8" id="785-7k-hwi"/>
                             <constraint firstItem="sSe-mh-X1r" firstAttribute="bottom" secondItem="4RD-lx-SCi" secondAttribute="bottom" constant="294" id="HuF-zs-e4B"/>
                             <constraint firstItem="Z6S-In-qLK" firstAttribute="leading" secondItem="sSe-mh-X1r" secondAttribute="leading" constant="16" id="O23-68-f3m"/>
+                            <constraint firstItem="NhK-XE-DXT" firstAttribute="centerX" secondItem="oHY-Jr-aY0" secondAttribute="centerX" id="Yuf-O7-aWT"/>
+                            <constraint firstItem="NhK-XE-DXT" firstAttribute="top" secondItem="sSe-mh-X1r" secondAttribute="top" constant="11" id="oPo-2h-EvC"/>
                             <constraint firstItem="sSe-mh-X1r" firstAttribute="trailing" secondItem="4RD-lx-SCi" secondAttribute="trailing" constant="22" id="v61-oI-SLg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sSe-mh-X1r"/>
